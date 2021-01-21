@@ -1,8 +1,9 @@
 # -*- coding:utf-8 -*- 
-import discord, asyncio, urllib # 디스코드 모듈과, 보조 모듈인 asyncio를 불러옵니다. token = "my_token"
+import discord, asyncio, urllib # 디스코드 모듈과, 보조 모듈인 asyncio를 불러옵니다. token = "my_token
+import os
 # 아까 메모해 둔 토큰을 입력합니다 client = discord.Client() # discord.Client() 같은 긴 단어 대신 client를 사용하겠다는 선언입니다.
 
-token ="NjI2OTE0NTI5NDg1MjU4ODA1.XY1Bpw.3maJBBUhrMHIIZFHERYGLRfOsLk"
+token =os.environ["BOT_TOKEN"]
 client = discord.Client()
 
 #when started bot
